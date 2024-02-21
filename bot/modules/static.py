@@ -27,15 +27,15 @@ UserInfoText = \
 FileLinksText = \
 """
 **Download Link:**
-`%(dl_link)s`
+`[Link](%(dl_link)s)`
 """
 
 MediaLinksText = \
 """
 **Download Link:**
-`%(dl_link)s`
+`[Link](%(dl_link)s)`
 **Stream Link:**
-`%(stream_link)s`
+`[Link](%(stream_link)s)`
 """
 
 InvalidQueryText = \
