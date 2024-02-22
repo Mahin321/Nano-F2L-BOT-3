@@ -1,4 +1,4 @@
-from telethon import Button
+from telethon import Button, ParseMode
 from telethon.events import NewMessage
 from telethon.errors import MessageAuthorRequiredError, MessageNotModifiedError, MessageIdInvalidError
 from telethon.tl.custom import Message
@@ -12,6 +12,13 @@ from bot.modules.static import *
 @TelegramBot.on(NewMessage(incoming=True, func=filter_files))
 @verify_user(private=True)
 async def user_file_handler(event: NewMessage.Event | Message):
+    if Telegram.START_PIC:
+        await event.reply_photo(
+            photo=Telegram.START_PIC,
+            caption="Your start message caption here",
+            parse_mode=ParseMode.HTML
+        )
+
     secret_code = token_hex(Telegram.SECRET_CODE_LENGTH)
     event.message.text = f'`{secret_code}`'
     message = await send_message(event.message)
@@ -51,6 +58,13 @@ async def user_file_handler(event: NewMessage.Event | Message):
 @TelegramBot.on(NewMessage(incoming=True, func=filter_files, forwards=False))
 @verify_user()
 async def channel_file_handler(event: NewMessage.Event | Message):
+    if Telegram.START_PIC:
+        await event.reply_photo(
+            photo=Telegram.START_PIC,
+            caption="Your start message caption here",
+            parse_mode=ParseMode.HTML
+        )
+
     if event.raw_text and '#pass' in event.raw_text:
         return
     
