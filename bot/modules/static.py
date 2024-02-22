@@ -1,9 +1,7 @@
 WelcomeText = \
 """
-Hi **%(first_name)s**, send me a file or add me as an admin to any channel to instantly generate file links.
-
-Add me to your channel to instantly generate links for any downloadable media. Once received, I will automatically attach appropriate buttons to the post containing the URL. If you want me to ignore a given post, you can insert `#pass` in the post.
-
+<b>👋 Hᴇʏ, </b>{}\n 
+<b>I'ᴍ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇs sᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ ᴀs ᴡᴇʟʟ ᴅɪʀᴇᴄᴛ ʟɪɴᴋs ɢᴇɴᴇʀᴀᴛᴏʀ</b>
 - /start to get this message.
 - /info to get user info.
 - /log to get bot logs. (admin only!)
@@ -26,16 +24,22 @@ UserInfoText = \
 
 FileLinksText = \
 """
-**Download Link:**
-`[Link](%(dl_link)s)`
+<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <b>{}</b>\n
+<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <code>{}</code>\n
+<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <code>{}</code>\n
+<b>🖥 Wᴀᴛᴄʜ :</b> <code>{}</code>\n
+<b>🔗 Sʜᴀʀᴇ :</b> <code>{}</code>\n
 """
 
 MediaLinksText = \
 """
-**Download Link:**
-`[Link](%(dl_link)s)`
-**Stream Link:**
-`[Link](%(stream_link)s)`
+<i><u>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !</u></i>\n
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <b>{}</b>\n
+<b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <code>{}</code>\n
+<b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <code>{}</code>\n
+<b>🖥 Wᴀᴛᴄʜ :</b> <code>{}</code>\n
+<b>🔗 Sʜᴀʀᴇ :</b> <code>{}</code>\n
 """
 
 InvalidQueryText = \
