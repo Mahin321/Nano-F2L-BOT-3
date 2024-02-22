@@ -26,14 +26,12 @@ UserInfoText = \
 
 FileLinksText = \
 """
-**File Name:** %(file_name)s
 **Download Link:**
 <a href="%(dl_link)s">Download</a>
 """
 
 MediaLinksText = \
 """
-**Media Name:** %(media_name)s
 **Download Link:**
 <a href="%(dl_link)s">Download</a>
 **Stream Link:**
