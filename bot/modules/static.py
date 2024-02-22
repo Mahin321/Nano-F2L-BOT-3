@@ -1,9 +1,9 @@
 WelcomeText = \
 """
-Hi **%(first_name)s**😎
+Hi **%(first_name)s** 😎
 I'm Telegram File To Link Generator Bot
 
-Send Me Any File And Get High Speed Direct Download Link And Streamable Link
+Send Me Any File And Get High-Speed Direct Download Link And Streamable Link
 - /start to get this message.
 - /info to get user info.
 - /log to get bot logs. (admin only!)
@@ -39,8 +39,6 @@ MediaLinksText = \
 **Stream Link:**
 <a href="%(stream_link)s">Stream</a>
 """
-
-
 
 InvalidQueryText = \
 """
